@@ -1,0 +1,31 @@
+﻿<div ng-controller="brokenLinksCheckerController as vm">
+    <button ng-click="vm.baseAPI(vm.URL)" class="btn btn-margin">
+        Check Links
+    </button>
+    <br>
+    <div ng-if="vm.fetchingBrokenLinks">
+        <umb-load-indicator />
+    </div>
+
+    <table ng-if="!vm.fetchingBrokenLinks && vm.links.length > 0" class="table table-condensed table-striped">
+        <thead>
+            <tr>
+                <th>URL</th>
+                <th>Error</th>
+                <th>Status Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="link in vm.links">
+                <td>{{ link.Link | limitTo: 70 }}</td>
+                <td>{{ link.StatusCode }}</td>
+                <td>{{link.ErrorMessage }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div ng-if="vm.links.length === 0">
+        <h5>
+            There are no broken links
+        </h5>
+    </div>
+</div>

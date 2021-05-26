@@ -1,0 +1,25 @@
+﻿<div ng-controller="htagStructureController as vm">
+    <div ng-if="vm.fetchingHtags">
+        <umb-load-indicator />
+    </div>
+
+    <table ng-if="!vm.fetchingHtags && vm.htags.length > 0" class="htag-content table table-condensed table-striped">
+        <thead>
+            <tr>
+                <th>H-tag</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="htag in vm.htags">
+                <td ng-class="{'padding-2': htag.name === 'h2', 'padding-3': htag.name === 'h3', 'padding-4': htag.name === 'h4', 'padding-5': htag.name === 'h5'}">{{ htag.name }}</td>
+                <td ng-class="{'padding-2': htag.name === 'h2', 'padding-3': htag.name === 'h3', 'padding-4': htag.name === 'h4', 'padding-5': htag.name === 'h5'}">{{htag.innerText }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div ng-if="vm.htags.length === 0">
+        <h5>
+            There are no h-tags in this page
+        </h5>
+    </div>
+</div>

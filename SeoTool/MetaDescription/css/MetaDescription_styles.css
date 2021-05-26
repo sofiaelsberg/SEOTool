@@ -1,0 +1,24 @@
+﻿body {
+
+}
+
+.shortMeta {
+    color: #FF8C00;
+    font-weight: 700;
+}
+
+.mediumMeta {
+    color: #53AA4A;
+    font-weight: 700;
+}
+
+.longMeta {
+    color: #9D261D;
+    font-weight: 700;
+}
+
+.meta-title {
+    font-size: 16px;
+    color: #1122CC;
+    text-decoration: underline;
+}

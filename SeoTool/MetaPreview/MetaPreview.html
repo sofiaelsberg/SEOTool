@@ -1,0 +1,22 @@
+﻿<div ng-controller="metaPreviewController as vm">
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+
+            <div>
+                <div class="snippetContainer" ng-class="{'phone': vm.phone, 'web': vm.web}">
+                    <a class="meta-title" ng-if="getmetatitle.metaTitle == ''">This is an example of meta title. Please type meta title to see the preview.</a>
+                    <a class="meta-title" href="{{vm.URL}}" ng-if="!getmetatitle.metaTitle == ''">{{getmetatitle.metaTitle}}</a>
+
+                    <p class="meta-link">https://rockets-spring-2021.s1.umbraco.io{{vm.URL}}</p>
+
+                    <span class="meta-description" ng-if="getmetadescription.metaDescription == ''">This is an example of meta description. Please type meta description to see the preview.</span>
+                    <span class="meta-description" ng-if="!getmetadescription.metaDescription == ''">{{getmetadescription.metaDescription}}</span>
+                </div>
+
+                <div class="snippet-buttons">
+                    <p>Select a screen size:</p>
+                    <button class="btn" ng-click="vm.webPreview()">Desktop</button>
+                    <button class="btn" ng-click="vm.phonePreview()">iPhone X/6/7/8</button>
+                </div>
+            </div>
+
+</div>

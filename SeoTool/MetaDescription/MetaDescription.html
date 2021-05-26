@@ -1,0 +1,13 @@
+﻿<div ng-controller="metaDescriptionController as vm">
+
+    <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+
+    <div class="meta-fields">
+        <input name="metaDescription" id="meta_description" type="text" ng-model="metaDescription.metaDescription" />
+        <div class="meta-validation" ng-show="metaDescription.metaDescription.length">
+            <p ng-class="{'shortMeta': metaDescription.metaDescription.length < 130, 'mediumMeta': metaDescription.metaDescription.length > 129 && metaDescription.metaDescription.length <160, 'longMeta': metaDescription.metaDescription.length > 159}">{{metaDescription.metaDescription.length}}</p>
+        </div>
+    </div>
+
+</div>

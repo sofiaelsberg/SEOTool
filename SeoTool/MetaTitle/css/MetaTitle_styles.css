@@ -1,0 +1,42 @@
+﻿
+.shortMeta {
+    color: #FF8C00;
+    font-weight: 700;
+}
+
+.mediumMeta {
+    color: #53AA4A;
+    font-weight: 700;
+}
+
+.longMeta {
+    color: #9D261D;
+    font-weight: 700;
+}
+
+.meta-title {
+    font-size: 16px;
+    color: #1122CC;
+    text-decoration: underline;
+}
+
+.meta-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#meta_description {
+    height: 60px;
+    width: 800px;
+}
+
+#meta_title {
+    height: 60px;
+    width: 800px;
+}
+
+.meta-validation {
+    padding-left: 10px;
+}

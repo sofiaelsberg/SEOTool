@@ -1,0 +1,7 @@
+﻿.BrokenLinksController ul {
+    list-style-type: none;
+    margin: 1em;
+}
+.btn-margin{
+    margin-bottom: 10px!important;
+}

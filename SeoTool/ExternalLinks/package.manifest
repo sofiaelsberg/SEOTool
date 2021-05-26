@@ -1,0 +1,28 @@
+{
+  // we can define multiple editors
+  "$schema": "http://json.schemastore.org/package.manifest",
+  "propertyEditors": [
+    {
+      /*this must be a unique alias*/
+      "alias": "ExternalLinks",
+      /*the name*/
+      "name": "External Links",
+      /*the icon*/
+      "icon": "icon-code",
+      /*grouping for "Select editor" dialog*/
+      "group": "Media",
+      /*the HTML file we will load for the editor*/
+      "editor": {
+        "view": "~/App_Plugins/SeoTool/ExternalLinks/ExternalLinks.html"
+      }
+    }
+  ],
+  // array of files we want to inject into the application on app_start
+  "javascript": [
+    "~/App_Plugins/SeoTool/ExternalLinks/js/ExternalLinks.controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/SeoTool/ExternalLinks/css/ExternalLinks_styles.css"
+  ]
+}

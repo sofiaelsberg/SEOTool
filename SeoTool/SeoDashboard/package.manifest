@@ -1,0 +1,11 @@
+{
+  // array of files we want to inject into the application on app_start
+  "$schema": "http://json.schemastore.org/package.manifest",
+  "javascript": [
+    "~/App_Plugins/SeoTool/SeoDashboard/js/dashboard.controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/SeoTool/BrokenLinksChecker/css/BrokenLinksChecker_styles.css"
+  ]
+}

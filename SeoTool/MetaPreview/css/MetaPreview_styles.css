@@ -1,0 +1,41 @@
+﻿body {
+
+}
+
+.shortMeta {
+    color: #FF8C00;
+    font-weight: 700;
+}
+
+.mediumMeta {
+    color: #53AA4A;
+    font-weight: 700;
+}
+
+.longMeta {
+    color: #9D261D;
+    font-weight: 700;
+}
+
+.snippetContainer {
+    overflow-wrap: break-word;
+}
+
+.phone {
+    max-width: 415px;
+}
+
+.web {
+    max-width: 600px;
+}
+
+.meta-link {
+    color: #282;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0;
+}
+
+.snippet-buttons {
+    padding-top: 50px;
+}
