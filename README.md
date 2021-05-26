@@ -1,2 +1,2 @@
 # SEOTool
-A SEO Tool Property Editor for Umbraco by Sofia Lund Elsberg and Kristine Dzumakajeva
+A SEO Tool with custom Property Editors for Umbraco by Sofia Lund Elsberg and Kristine Dzumakajeva
